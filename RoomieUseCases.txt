@@ -1,0 +1,85 @@
+Roomie Use Cases:
+
+1. User can register for an account
+	a. User is prompted for information (name, phone number, email, birthday, password(min 8 char), profile photo)
+	b. Information is verified by database to ensure availability 
+		1. If unavailable, user is prompted again to enter new information
+		2. If available, info is saved to the database. User is automatically logged in
+
+2. User can login to an existing account
+	a. User is prompted for login information (phone number, password)
+		1. If the information is incorrect, re-prompt the user
+		2. If the information is correct, login the user
+	b. User has forgotten password
+		1. Prompt the user for phone number and email
+			a. If the combination exists, send an email with temporary password
+			b. If it does not exist, re-prompt the user
+
+3. User has logged in and is not a part of an existing house and has no invitations
+	a. User given option to create a new House
+		1. User prompted for house information (address, list of roomies to add)
+		2. Information is verified by database (user accounts exist)
+			a. If not, re-prompt for different roomies or add later
+			b. If so, create house account, move user to main interface
+
+4. User has logged in and is not a part of an existing house and has an invitation
+	a. User if given option to accept or decline
+		1. If accept, add user to accepted housemates list, move user to main interface
+		2. If declined, remove user from potential housemate list
+
+5. HOUSE FEED - User can scroll through recent HouseFeed data
+
+6. HOUSE FEED - User can interact with HouseFeed data
+	a. Click on an item to be navigated to a more detailed view
+
+7. HOUSE FEED - User can click 'settings' button to navigate to a settings interface
+	a. User can change / upload profile photo
+	b. User can update email address
+	c. User can change password (min 8 char)
+	d. Head of Household User can add new roomies
+	e. Head of Household User can delete roomies
+
+8. LISTS - User can create a new list
+	a. User is prompted for list title
+	b. List is created and added to list of Lists
+
+9. LISTS - User can modify an existing list
+	a. User can add new bullets to an existing list
+	b. User can check off list items
+
+10. LISTS - User can delete an existing list (creator of list only)
+
+11. NOTES - User can create a new note
+	a. User is prompted for the note content
+	b. User is given option to assign reactions to answers
+
+12. NOTES - User can react to existing notes
+
+13. NOTES - User can reply to existing notes
+
+14. NOTES - User can delete an existing note that he created
+
+15. CALENDAR - User can create a new event
+	a. User is prompted for the event title, description, date, and time
+	b. Event is created and added to list of calendar events
+
+16. CALENDAR - User can delete an existing event that he created
+
+17. CALENDAR - User can modify calendar events
+	a. User is prompted for updated event title, description, date, and time
+	b. Event info is updated in the database
+
+18. PAYMENTS - TBD
+
+
+
+
+
+
+
+
+
+
+
+
+
